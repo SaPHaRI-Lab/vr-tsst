@@ -9,7 +9,6 @@ public class AdditiveSceneLoader : MonoBehaviour {
 	private string _sceneName;
 	
 	private void Start() {
-		ScreenFader.Fade(Color.black,0f);
 		LoadScene();
 	}
 	

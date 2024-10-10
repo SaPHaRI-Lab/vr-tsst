@@ -1,0 +1,14 @@
+Begin Study at: 05-10-2024 16:52:33.
+
+Settings used:
+One Auditor?: False
+Second round announcement?: True
+Language: Deutsch
+First round: [SpeechProjectManager, Subtraction]
+Second round: []
+
+Participant Number: 2
+
+--------------------------------------
+
+Started task "Uninitialized" at 05-10-2024 16:52:33

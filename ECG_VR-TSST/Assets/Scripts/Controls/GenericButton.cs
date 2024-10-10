@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class GenericButton : MonoBehaviour
@@ -9,7 +10,7 @@ public class GenericButton : MonoBehaviour
     private Button _uiButton;
 
     [SerializeField]
-	private string _inputButton;
+	private Key _inputButton;
 
     [SerializeField]
     private UnityEvent _onClick;
@@ -34,7 +35,7 @@ public class GenericButton : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown(_inputButton))
+        if (Keyboard.current[_inputButton].wasPressedThisFrame)
         {
             TriggerGenericButtonClick();
         }

@@ -81,7 +81,6 @@ public class PositionChangeTask : AbstractTask
                 _state = State.Change;
                 _waitingRoomRig.SetActive(false);
                 _officeRig.SetActive(true);
-                ScreenFader.Fade(Color.black, 0f);
                 Door.Instance.Close();
                 Timer.Instance.StartTimer(0.2f, Timer.Mode.Automatic);
                 return true;

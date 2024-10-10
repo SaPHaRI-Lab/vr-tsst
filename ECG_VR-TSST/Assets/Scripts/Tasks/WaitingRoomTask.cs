@@ -40,7 +40,10 @@ public class WaitingRoomTask : AbstractTask
     [ContextMenu("Inactive Setup")]
     protected override void InactiveSetup()
     {
-        _readyText.enabled = false;
+        if(_readyText != null)
+        {
+            _readyText.enabled = false;
+        }
         _surveillanceText.enabled = false;
         _initalText.enabled = false;
         _state = State.Inactive;

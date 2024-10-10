@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.IO;
+using UnityEngine.InputSystem;
 
 public class HiResScreenShots : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class HiResScreenShots : MonoBehaviour
 
     void LateUpdate()
     {
-        takeHiResShot |= Input.GetKeyDown(KeyCode.F8);
+        takeHiResShot |= Keyboard.current[Key.F8].wasPressedThisFrame;
         if (takeHiResShot)
         {
             #if !UNITY_4_3

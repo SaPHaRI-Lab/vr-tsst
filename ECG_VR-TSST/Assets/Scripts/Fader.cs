@@ -43,8 +43,6 @@ public class Fader : MonoBehaviour
 
     public void Fade(Color color, float time, bool fadeIn = true, VisualFadeType type = VisualFadeType.Start)
     {
-        if (type == VisualFadeType.Start) ScreenFader.Fade(color, time);
-        //else if (type == VisualFadeType.View) SteamVR_Fade.View(color, time); //removed because never used
         StartCoroutine(FadeAudio(time, fadeIn));
     }
 

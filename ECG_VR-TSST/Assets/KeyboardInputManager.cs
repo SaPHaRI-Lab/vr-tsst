@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class KeyboardInputManager : MonoBehaviour {
@@ -29,39 +30,39 @@ public class KeyboardInputManager : MonoBehaviour {
     /// </summary>
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Keyboard.current[Key.Digit1].wasPressedThisFrame)
         {
             weiter.onClick.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Keyboard.current[Key.Digit2].wasPressedThisFrame)
         {
             erneut.onClick.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (Keyboard.current[Key.Digit3].wasPressedThisFrame)
         {
             zeitNichtUm.onClick.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        else if (Keyboard.current[Key.Digit4].wasPressedThisFrame)
         {
             nichtVerstanden.onClick.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        else if (Keyboard.current[Key.Digit5].wasPressedThisFrame)
         {
             lautUndDeutlich.onClick.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        else if (Keyboard.current[Key.Digit6].wasPressedThisFrame)
         {
             vonVorne.onClick.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        else if (Keyboard.current[Key.Digit7].wasPressedThisFrame)
         {
             falsch.onClick.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        else if (Keyboard.current[Key.Digit8].wasPressedThisFrame)
         {
             richtig.onClick.Invoke();
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha9))
+        else if (Keyboard.current[Key.Digit9].wasPressedThisFrame)
         {
             ergebnis.onClick.Invoke();
         }
